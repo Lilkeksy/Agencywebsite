@@ -14,8 +14,9 @@ body {
 .navigation {
     display: flex;
     flex: 1;
-    justify-content: space-between; /* Ensures the cards are spread out */
+    justify-content: space-around; /* Ensures the cards are spread out */
     background-color: #720455;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -53,11 +54,7 @@ justify-content: right;
 .logo {
     width: 100px;
     margin: 0;
-}
-
-.menu {
-    width: 50px;
-    margin: 0;
+    padding-left:20px
 }
 
 .navigation-ul {
@@ -68,6 +65,11 @@ justify-content: right;
     align-items: center; /* Center list items vertically */
 }
 
+.menu {
+    width: 50px;
+    margin: 0;
+    padding-right: 20px;
+}
 .nav {
     padding-left: 60px;
 }
@@ -128,37 +130,40 @@ h3 {
 @media (max-width: 1024px) {
     h1 {
         font-size: 6rem;
-        text-indent: 100px;
+        text-indent: 0;
+        text-align: center;
     }
     h2 {
+        text-align: center;
         font-size: 2.5rem;
-        text-indent: 200px;
+        text-indent:0;
     }
 }
 
 @media (max-width: 767px) {
     .navigation-ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: space;
     }
     .nav {
         padding-left: 0;
     }
     h1 {
-        font-size: 4rem;
-        text-indent: 80px;
+        font-size: 5rem;
+        text-indent: 0px;
+        text-align: center;
     }
     h2 {
         font-size: 2rem;
-        text-indent: 150px;
+        text-indent: 0px;
     }
 }
 
 @media (max-width: 480px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         height: auto;
-        padding: 10px 0;
     }
     .logo {
         width: 70px;
@@ -176,7 +181,7 @@ h3 {
         padding: 10px 20px;
     }
     .navigation {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .card {
@@ -185,6 +190,6 @@ h3 {
     ul {
         color: #720455;
         font-weight: bold;
-        font-size: 125%;
+        font-size: 80%;
     }
 }
