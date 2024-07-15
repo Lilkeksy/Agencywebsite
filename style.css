@@ -167,7 +167,8 @@ h3 {
     }
     .logo {
         width: 40px;
-        margin: 10px;
+        margin: 5px;
+        padding-left: 15px;
     }
     .menu{
         width: 30px
