@@ -166,11 +166,14 @@ h3 {
         height: auto;
     }
     .logo {
-        width: 70px;
+        width: 40px;
         margin: 10px;
     }
+    .menu{
+        width: 30px
+    }
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
         text-indent: 0;
         text-align: center;
     }
@@ -178,7 +181,7 @@ h3 {
         font-size: 1.5rem;
         text-indent: 0;
         text-align: center;
-        padding: 10px 20px;
+        padding: 0px 20px;
         padding-top: 40px;
     }
     .navigation {
@@ -188,13 +191,24 @@ h3 {
     .card {
         width: 100%;
     }
+    .navigation-ul{
+        display: none;
+    }
+    .skills{
+        padding-top:35px;
+    }
+    .gr{
+        display:block;
+        line-height: 60px;
+    }
+    h3{
+        padding-top: 20px;
+    }
     ul {
         color: #720455;
         font-weight: bold;
         font-size: 80%;
         padding:0;
     }
-    h3{
-        padding-top: 20px;
-    }
+    
 }
